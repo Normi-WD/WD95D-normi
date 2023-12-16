@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Resume</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color:  #b0dbec;
+      padding-top: 20px;
+    }
+    .profile-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .jumbotron {
+    background-color:#e2e7e8;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .logo-container {
+    position: relative;
+  }
+  .logo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .logo-container h1 {
+    position: relative;
+    z-index: 2;
+  }
+  .navbar {
+    justify-content: end;
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: rgb(115, 206, 236);
+    }
+  .search-bar {
+    margin-bottom: 20px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="d-flex align-items-end">
+      <img src="D_logo.png" alt="Logo" class="logo-img">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Employer_Portal.html">Employer's Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_Us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Our_Services.html">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Applicant's_Profile.html">Applicants</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 offset-md-6">
+      <input type="text" class="form-control search-bar" placeholder="Search for Applicants">
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <h1>Applicant Resume</h1>
+    <form id="resumeForm" method="post">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills:</label>
+        <textarea class="form-control" id="skills" name="skills" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience:</label>
+        <textarea class="form-control" id="experience" name="experience" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="education">Education</label>
+        <textarea class="form-control" id="education" name="education" required></textarea>
+      </div>
+      <div>
+        <label for="resumePhoto">Upload Photo</label>
+        <input type="file" id="resumePhoto" name="resumePhoto" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Resume</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #74acc2;
+      padding-top: 20px;
+    }
+    .profile-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .logo-container {
+      position: relative;
+    }
+    .logo-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    .navbar {
+      justify-content: end;
+    }
+    .navbar-nav .nav-link:hover {
+    background-color: rgb(115, 206, 236);
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="d-flex align-items-end">
+      <img src="D_logo.png" alt="Logo" class="logo-img">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Employer_Portal.html">Employer's Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Applicant's_Profile.html">Applicants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About_Us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Our_Services.html">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-6">
+        <input type="text" class="form-control search-bar" placeholder="Search for Applicants">
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to DALAL KHIDMAT</h1>
+      <p>DALAL KHIDMAT is a premier recruitment agency in Kuwait, connecting employers with top talent.</p>
+    </div> 
+
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-center">Applicant Profiles</h1>
+      <div class="row">
+
+
+        <div class="col-md-6 mb-4">
+          <div class="profile-card d-flex flex-column justify-content-end">
+            <div class="text-center">
+              <img src="Profile.jpeg" alt="Profile Picture" class="profile-img">
+              <h2>John Doe</h2>
+              <p>Software Developer</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Contact Information</h3> 
+              <p>Email: johndoe@example.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Email: dperez@example.com</p>
+              <p>Email: dperez@example.com</p>
+              <p> Address: 123 Main St., Manila, Philippines </p>
+            </div>
+            <hr>
+            <div>
+              <h3>Education</h3>
+              <p>Bachelor's Degree in Computer Science - XYZ University (Year)</p>
+              <p>High School Diploma - ABC School (Year)</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Work Experience</h3>
+              <p>Software Engineer at ABC Company (Year - Present)</p>
+              <p>Intern at XYZ Corporation (Year)</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Skills</h3>
+              <p>JavaScript, Python, HTML, CSS, React, Node.js</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="profile-card d-flex flex-column justify-content-end">
+            <div class="text-center">
+              <img src="Profile.jpeg" alt="Profile Picture" class="profile-img">
+              <h2>Dave Perez</h2>
+              <p>Chef</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Contact Information</h3>
+              <p>Email: dperez@example.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Address: 123 Main St, Mindanao, Philippines</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Education</h3>
+              <p>Culinary Arts Degree from USM</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Work Experience</h3>
+              <p>3 years of experience in high-end restaurants creating diverse cuisines.</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Skills</h3>
+              <p>Culinary expertise.</p>
+              <p>Menu Planning.</p>
+              <p>Food Preparation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="profile-card d-flex flex-column justify-content-end">
+            <div class="text-center">
+              <img src="Profile.jpeg" alt="Profile Picture" class="profile-img">
+              <h2>Sally Diaz</h2>
+              <p>Sales Associate</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Contact Information</h3>
+              <p>Email: sallydiaz@example.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Address: 123 Main St, Cebu, Philippines</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Education</h3>
+              <p>Bachelor's Degree in Marketing</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Work Experience</h3>
+              <p>5 years of retail sales experience in various industries.</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Skills</h3>
+              <p>Customer Service</p>
+              <p>Product Knowledge</p>
+              <p>Sales Techniques</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="profile-card d-flex flex-column justify-content-end">
+            <div class="text-center">
+              <img src="Profile.jpeg" alt="Profile Picture" class="profile-img">
+              <h2>Anne Beduya</h2>
+              <p>Waitress</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Contact Information</h3>
+              <p>Email: sallydiaz@example.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Address: 123 Main St, Mindanao, Philippines</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Education</h3>
+              <p>Completed hospitality training and certification.</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Work Experience</h3>
+              <p>Worked in upscale restaurants, handling diverse costumer needs.</p>
+            </div>
+            <hr>
+            <div>
+              <h3>Skills</h3>
+              <p>Excellent Communication</p>
+              <p>Costumer Service</p>
+              <p>Table Service</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h1 class="mt-5 mb-4 text-center">Are you looking for a job abroad?</h5>
+          <h5 class="card-title text-dark bg-light p-2">Click the link and build your own resume. <a href="Resume.html" class="text-decoration-none bg-primary text-white px-2 py-1 rounded">View Resume</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Our office</h4>
+          <p>123 main Street, Kuwait</p>
+          <p>Phone: +965 23139697</p>
+          <p>Email: dalal@yahoo.com</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Opening Hours</h4>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          <p>Satuday: 9:00 AM - 12:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Office Manager</h4>
+          <p>Name: Edna Cardino</p>
+          <p>Email: cardino01@hotmail.com</p>
+          <p>Number: +965 90192938</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

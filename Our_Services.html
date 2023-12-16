@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DALAL KHIDMAT - Our Services</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #74acc2;
+      padding: 50px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .jumbotron {
+      background-color:#e2e7e8;
+      padding: 50px;
+      margin-top: 30px;
+    }
+    .logo-container {
+      position: relative;
+    }
+    .logo-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .logo-container h1 {
+      position: relative;
+      z-index: 2;
+    }
+    .navbar {
+      justify-content: end;
+    }
+    .navbar-nav .nav-link:hover {
+    background-color: rgb(115, 206, 236);
+    }
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    .content {
+      text-align: left;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="d-flex align-items-end">
+        <img src="D_logo.png" alt="Logo" class="logo-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Employer_Portal.html">Employer's Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Applicant's_Profile.html">Applicants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Our_Services.html">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-6">
+        <input type="text" class="form-control search-bar" placeholder="Search for Applicants">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Our Services</h1>
+      <p>We offer comprehensive services to cater to the needs of both employers and job seekers.</p>
+    </div>
+      
+    <!-- Services Offered -->
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-center">Services We Offered.</h1>
+      <div class="row">
+          
+      <div class="col-md-6 mb-4 text-center">
+        <div class="card position-relative border-1 shadow">
+          <img src="HR.jpg" class="card-img rounded-1" alt="Job Postings Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title text-dark bg-light p-2">Job Postings</h5>
+            <p class="card-text text-dark bg-light p-2">Employers can easily post job vacancies and reach a vast pool of qualified applicants.</p>
+            <a href="Job_posting.html" class="btn btn-primary stretched-link">Browse Job Postings</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 text-center">
+        <div class="card position-relative border-1 shadow">
+          <img src="HR2.jpg" class="card-img rounded-1" alt="Applicant Matching Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title text-dark bg-light p-2">Applicant Matching</h5>
+            <p class="card-text text-dark bg-light p-2">We match employers with suitable applicants based on specific job criteria, ensuring quality hires.</p>
+            <a href="Applicant's_Profile.html" class="btn btn-primary stretched-link">Browse Applicants</a>
+          </div> 
+        </div>
+      </div>
+    
+      <div class="col-md-6 mb-4 text-center">
+        <div class="card-position-relative border-1 shadow">
+          <img src="Talents.png" class="card-img rounded-1" alt="Find Talents Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title text-dark bg-light p-2">Find Talents</h5>
+            <p class="card-text text-dark bg-light p-2">Are you an employer looking for top talent?</p>
+            <a href="Job_posting.html" class="btn btn-primary stretched-link">Browse Talents</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4 text-center">
+        <div class="card-position-relative border-1 shadow">
+          <img src="Skills.png" class="card-img rounded-1" alt="Skills Assessment Image">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title text-dark bg-light p-2">Skills Assessment and Testing</h5>
+            <p class="card-text text-dark bg-light p-2">Empower employers with precise assessment tools to gauge candidates' abilities, aiding in efficient hiring decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Our office</h4>
+          <p>123 main Street, Kuwait</p>
+          <p>Phone: +965 23139697</p>
+          <p>Email: dalal@yahoo.com</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Opening Hours</h4>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          <p>Satuday: 9:00 AM - 12:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Office Manager</h4>
+          <p>Name: Edna Cardino</p>
+          <p>Email: cardino01@hotmail.com</p>
+          <p>Number: +965 90192938</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

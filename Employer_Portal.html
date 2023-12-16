@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #74acc2;
+    padding: 50px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .jumbotron {
+    background-color:#e2e7e8;
+    padding: 50px;
+    margin-top: 30px;
+  }
+  .logo-container {
+    position: relative;
+  }
+  .logo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .logo-container h1 {
+    position: relative;
+    z-index: 2;
+  }
+  .navbar {
+    justify-content: end;
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: rgb(115, 206, 236);
+    }
+  .search-bar {
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="d-flex align-items-end">
+        <img src="D_logo.png" alt="Logo" class="logo-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Employer_Portal.html">Employer's Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Applicant's_Profile.html">Applicants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Our_Services.html">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-6">
+        <input type="text" class="form-control search-bar" placeholder="Search for Applicants">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1 class="text-center">Post a Job</h1>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" class="form-control" id="company" name="company" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" name="location" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Job Description</label>
+            <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="requirements">Job Requirements</label>
+            <textarea class="form-control" id="requirements" name="requirements" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="applyNow">applyNow</label>
+            <input type="date" class="form-control" id="applyNow" name="applyNow" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Our office</h4>
+          <p>123 main Street, Kuwait</p>
+          <p>Phone: +965 23139697</p>
+          <p>Email: dalal@yahoo.com</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Opening Hours</h4>
+          <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          <p>Satuday: 9:00 AM - 12:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Office Manager</h4>
+          <p>Name: Edna Cardino</p>
+          <p>Email: cardino01@hotmail.com</p>
+          <p>Number: +965 90192938</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
